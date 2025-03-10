@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: flink-microservice
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: flink-microservice-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: com.example.model
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+server:
+  port: 8080
+
+flink:
+  jobmanager:
+    host: localhost
+    port: 8081
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: flink-microservice-group
+    topics:
+      input: input-events
+      output: processed-events
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
