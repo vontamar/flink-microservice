@@ -1,6 +1,6 @@
-package com.example.serialization;
+package com.flink.serialization;
 
-import com.example.model.Event;
+import com.flink.model.Event;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.flink.api.common.serialization.DeserializationSchema;
 import org.apache.flink.api.common.typeinfo.TypeInformation;

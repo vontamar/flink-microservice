@@ -1,4 +1,4 @@
-package com.example.config;
+package com.flink.config;
 
 import org.apache.flink.api.common.restartstrategy.RestartStrategies;
 import org.apache.flink.api.java.utils.ParameterTool;

@@ -1,7 +1,7 @@
-package com.example.service;
+package com.flink.service;
 
-import com.example.model.AggregatedResult;
-import com.example.model.Event;
+import com.flink.model.AggregatedResult;
+import com.flink.model.Event;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.annotation.KafkaListener;

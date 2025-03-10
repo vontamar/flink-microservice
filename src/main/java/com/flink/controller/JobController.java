@@ -1,6 +1,6 @@
-package com.example.controller;
+package com.flink.controller;
 
-import com.example.model.Event;
+import com.flink.model.Event;
 import org.apache.flink.api.common.JobID;
 import org.apache.flink.api.common.JobStatus;
 import org.apache.flink.client.program.rest.RestClusterClient;

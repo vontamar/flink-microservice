@@ -1,6 +1,6 @@
-package com.example.serialization;
+package com.flink.serialization;
 
-import com.example.model.AggregatedResult;
+import com.flink.model.AggregatedResult;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.flink.api.common.serialization.SerializationSchema;
 
